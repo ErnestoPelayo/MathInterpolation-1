@@ -9,7 +9,7 @@ public class TestMethodsInterpolation {
     @Test
     public void testLagrange() {
         double t = 9;
-        Vector<Double> xx =new Vector<Double> ();
+        Vector<Double> xx = new Vector<Double>();
         xx.addElement(6.0);
         Vector<Double> yy = new Vector<Double>();
         yy.addElement(7.0);
@@ -29,7 +29,6 @@ public class TestMethodsInterpolation {
         xx.addElement(3.3);
         xx.addElement(4.4);
 
-
         Vector<Double> yy = new Vector<Double>();
         yy.addElement(1.1);
         yy.addElement(2.2);
@@ -40,7 +39,6 @@ public class TestMethodsInterpolation {
         double expResult = 2.0;
         double result = instance.testCubicSpline(t, xx, yy);
         assertEquals(expResult, result, 0.0);
-
 
     }
 
